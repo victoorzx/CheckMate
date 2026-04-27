@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+header h1 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#addButton {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#addButton:hover {
+    background-color: #218838;
+}
+
+#errorMessage {
+    color: #dc3545;
+    font-size: 14px;
+    margin-bottom: 15px;
+    display: none;
+}
+
+.metrics-panel {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #495057;
+}
+
+#emptyState {
+    text-align: center;
+    color: #888888;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 12px;
+    background-color: #eeeeee;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.task-text {
+    flex: 1;
+    cursor: pointer;
+}
+
+.completed .task-text {
+    text-decoration: line-through;
+    color: #888888;
+}
+
+.completed {
+    background-color: #d4edda;
+}
+
+.task-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.complete-btn {
+    background-color: transparent;
+    color: #28a745;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.complete-btn:hover {
+    color: #1e7e34;
+}
+
+.delete-btn {
+    background-color: transparent;
+    color: #dc3545;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    color: #a71d2a;
+}
