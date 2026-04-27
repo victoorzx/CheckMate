@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check, Mate!</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Check, Mate!</h1>
+        </header>
+        
+        <main>
+            <form class="input-area" id="taskForm">
+                <input type="text" id="taskInput" placeholder="Digite uma nova tarefa...">
+                <button type="submit" id="addButton">Adicionar</button>
+            </form>
+            <p id="errorMessage">Por favor, insira uma descrição para a tarefa.</p>
+            
+            <div class="metrics-panel">
+                <span>Pendentes: <strong id="pendingCount">0</strong></span>
+                <span>Concluídas: <strong id="completedCount">0</strong></span>
+            </div>
+
+            <ul id="taskList"></ul>
+            <p id="emptyState">Nenhuma tarefa pendente. Você está livre!</p>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
