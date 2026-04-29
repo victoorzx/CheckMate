@@ -30,4 +30,5 @@ Este projeto foi desenvolvido como requisito de avaliação para a disciplina de
 
 ---
 **Autor:** Victor Araújo Batista  
-**Ano:** 2026
+**Ano:** 2026  
+**Link do Projeto:** https://github.com/victoorzx/CheckMate
